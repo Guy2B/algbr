@@ -1,41 +1,35 @@
-# Al.G.B.r. Project Architect V1.2
-
-Le configurateur `project.html` recueille les informations nécessaires avant une étude de site, d'application ou d'écosystème digital.
-
-## Parcours
-
-1. Type de projet : site, application, écosystème ou refonte.
-2. Activité : offre, cible, objectif et indicateur de réussite.
-3. Expérience : pages, écrans, rôles et parcours utilisateur.
-4. Fonctions : CRM, booking, questionnaire, espace client, paiement, cloud, IA et intégrations.
-5. Design : identité, contenus, références et priorités de qualité.
-6. Livraison : budget, délai, hébergement, maintenance et contraintes.
-7. Résumé : recommandation initiale, brief texte et export JSON.
-
-## Architecture Lune Beauty
-
-Le bouton « Utiliser l’architecture Lune Beauty comme base » préselectionne :
-
-- site public et catalogue de services ;
-- prix et pages métier ;
-- Lune Skin Check / questionnaire guidé ;
-- générateur de réservation ;
-- CRM et console d’administration ;
-- avis clients avec consentement ;
-- collecte et synchronisation cloud ;
-- confirmations, rappels et automatisations ;
-- statistiques et suivi.
-
-Le preset sert de point de départ et n’impose pas toutes ces fonctions au nouveau client.
-
-## Données et envoi
-
-- Le brouillon est stocké dans `localStorage` sous la clé `algbr-project-architect-v12`.
-- Rien n'est envoyé automatiquement par défaut.
-- Le client peut copier, télécharger `.txt`, exporter `.json` ou ouvrir son e-mail.
-- Pour une collecte cloud, configurez `contact.projectSubmissionEndpoint` dans `config.js` avec un endpoint HTTPS acceptant du JSON.
-- Ne placez jamais une clé secrète dans les fichiers publics du site.
-
-## Déploiement
-
-Le configurateur est statique et fonctionne sur GitHub Pages ou Firebase Hosting. Une API ou une Firebase Function est seulement nécessaire pour recevoir automatiquement les demandes.
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Confidentialité — Al.G.B.r.</title>
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="premium.css">
+</head>
+<body class="legal-page">
+  <header class="site-header"><div class="shell nav-wrap"><a class="brand algbr-brand" href="index.html"><img class="algbr-brand-logo" src="assets/algbr-wordmark.svg" alt="Al.G.B.r. Digital Studio" width="184" height="48"></a></div></header>
+  <main>
+    <section class="legal-hero"><div class="shell"><p class="eyebrow">Données personnelles</p><h1>Politique de confidentialité</h1></div></section>
+    <article class="shell legal-content">
+      <p class="placeholder"><strong>Modèle à adapter :</strong> faites vérifier cette page selon votre pays, votre statut juridique, vos outils d’analyse et votre méthode de contact.</p>
+      <h2>Architecte de projet</h2>
+      <p>Le configurateur peut contenir votre nom, vos coordonnées, des informations sur votre activité, les fonctions souhaitées, les données envisagées, votre budget et votre calendrier.</p>
+      <p>Par défaut, les réponses sont enregistrées uniquement dans le stockage local de votre navigateur afin que vous puissiez reprendre le formulaire. Elles ne sont pas envoyées automatiquement à Al.G.B.r.</p>
+      <h2>Envoi volontaire</h2>
+      <p>Vous choisissez explicitement de copier, télécharger ou envoyer le brief. Le bouton e-mail ouvre votre propre messagerie. Si un point de collecte cloud est configuré ultérieurement, son fournisseur, sa région d’hébergement et sa durée de conservation devront être indiqués ici.</p>
+      <h2>Finalité</h2>
+      <p>Les informations reçues servent à comprendre votre besoin, proposer une architecture, préparer un devis et assurer le suivi commercial. Elles ne sont pas vendues.</p>
+      <h2>Données sensibles</h2>
+      <p>Le formulaire ne doit pas contenir de mots de passe, secrets API, données bancaires complètes, dossiers médicaux ou documents d’identité. Utilisez un lien sécurisé distinct lorsqu’un échange de fichiers est nécessaire.</p>
+      <h2>Durée de conservation</h2>
+      <p>Définissez une durée adaptée, par exemple la durée des échanges commerciaux puis une période d’archivage raisonnable. Le brouillon local peut être supprimé à tout moment avec le bouton prévu dans le configurateur.</p>
+      <h2>Vos droits</h2>
+      <p>Vous pouvez demander l’accès, la rectification ou la suppression des informations transmises en écrivant à <a href="mailto:algbr@gmail.com">algbr@gmail.com</a>.</p>
+      <h2>Cookies et mesure d’audience</h2>
+      <p>Cette version ne dépose aucun cookie publicitaire. Le stockage local est utilisé pour la langue et le brouillon du configurateur. Si un outil d’analyse est ajouté, une information ou un consentement supplémentaire peut devenir nécessaire.</p>
+      <a class="back-link" href="index.html">← Retour au site</a>
+    </article>
+  </main>
+</body>
+</html>

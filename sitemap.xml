@@ -1,7 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://guy2b.github.io/algbr/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://guy2b.github.io/algbr/project.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://guy2b.github.io/algbr/legal.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
-  <url><loc>https://guy2b.github.io/algbr/privacy.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
-</urlset>
+# Al.G.B.r. Digital Studio — V1.3 Premium Story
+
+Site vitrine statique, responsive et multilingue (FR/DE/EN) pour présenter les services web, applications, support et automatisation d'Al.G.B.r.
+
+## Nouveautés V1.2
+
+- `project.html` : Architecte de projet complet pour sites, applications et écosystèmes digitaux.
+- Formulaire adaptatif en sept étapes.
+- Sauvegarde locale du brouillon.
+- Résumé en direct et recommandation d’architecture.
+- Export texte et JSON, copie et e-mail.
+- Preset inspiré de l’architecture Lune Beauty.
+- Lune Beauty présenté comme projet de référence : site, services, Skin Check, booking, CRM, avis et cloud.
+- Aucun envoi automatique ni secret côté client.
+
+## Configuration
+
+Les données principales sont déjà configurées dans `config.js` :
+
+- contact : `algbr@gmail.com` ;
+- Σ : `https://project-sum-b961a.web.app/app.html#dashboard` ;
+- Lune Beauty : `https://www.lunebeauty.de/` ;
+- URL GitHub Pages : `https://guy2b.github.io/algbr/`.
+
+Le champ `contact.projectSubmissionEndpoint` reste vide. Laissez-le vide pour utiliser la copie, le téléchargement et l’e-mail. Configurez-le seulement après avoir déployé un endpoint HTTPS sécurisé.
+
+## Tester localement
+
+```bash
+python -m http.server 8080
+```
+
+Ouvrez :
+
+- `http://localhost:8080/`
+- `http://localhost:8080/project.html`
+- `http://localhost:8080/project.html?preset=lune`
+
+## Structure principale
+
+- `index.html` : page commerciale et références.
+- `project.html` : configurateur de projet.
+- `project.js` : logique du wizard, sauvegarde et exports.
+- `v12.js` : traductions des nouveaux blocs de la page d’accueil.
+- `styles.css` : identité visuelle et responsive.
+- `app.js` : langues et animations du site historique.
+- `config.js` : coordonnées, références, prix et endpoint facultatif.
+- `PROJECT-ARCHITECT.md` : documentation détaillée.
+- `legal.html` / `privacy.html` : modèles à compléter.
+- `.github/workflows/pages.yml` : déploiement GitHub Pages.
+- `firebase.json` : déploiement Firebase Hosting.
+
+## V1.3
+
+La V1.3 apporte une direction premium Al.G.B.r., une storyline commerciale complète et utilise les fichiers officiels Lune Beauty fournis pour la référence et le preset de l’Architecte de projet. Voir `UPDATE-V1.3.md`.

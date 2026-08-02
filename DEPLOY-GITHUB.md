@@ -1,13 +1,22 @@
-# Déployer sur GitHub Pages
+# Checklist avant commercialisation
 
-1. Créez un nouveau dépôt, par exemple `algbr-studio`.
-2. Envoyez tout le contenu de ce dossier à la racine.
-3. Ouvrez `Settings > Pages`.
-4. Choisissez `GitHub Actions` comme source.
-5. Le workflow `.github/workflows/pages.yml` déploie le site à chaque commit sur `main`.
-
-Adresse probable :
-
-`https://VOTRE-UTILISATEUR.github.io/algbr-studio/`
-
-Avant le premier commit, complétez `config.js`, `legal.html`, `privacy.html`, `robots.txt` et `sitemap.xml`.
+- [x] Adresse de contact `algbr@gmail.com` dans `config.js`
+- [x] Références Σ et Lune Beauty configurées
+- [x] Architecte de projet pour sites, applications et écosystèmes
+- [x] Preset d’architecture Lune Beauty
+- [x] Export texte et JSON
+- [x] Aucune clé secrète dans le site public
+- [ ] Prix confirmés
+- [ ] Identité juridique complète dans `legal.html`
+- [ ] Politique de confidentialité vérifiée selon le pays et les outils utilisés
+- [ ] Nom de domaine connecté
+- [ ] Test du configurateur sur ordinateur et mobile
+- [ ] Test FR, DE et EN
+- [ ] Vérification de tous les liens et de l’adresse Lune Beauty
+- [ ] Test des téléchargements `.txt` et `.json`
+- [ ] Test de l’ouverture e-mail vers `algbr@gmail.com`
+- [ ] Décision : envoi par e-mail seulement ou endpoint cloud
+- [ ] Si endpoint cloud : authentification, anti-spam, journalisation et stockage UE
+- [ ] Ajout éventuel d’une mesure d’audience respectueuse de la vie privée
+- [ ] Test Lighthouse, performance et accessibilité
+- [ ] Test juridique des questions relatives aux données sensibles
