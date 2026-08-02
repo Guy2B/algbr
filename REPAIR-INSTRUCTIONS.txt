@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Configurez votre projet de site web, application ou écosystème numérique avec Al.G.B.r.">
+  <meta property="og:title" content="Architecte de projet — Al.G.B.r.">
+  <meta property="og:description" content="Un formulaire guidé pour définir pages, fonctions, données, intégrations, budget et support.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://guy2b.github.io/algbr/project.html">
+  <title>Architecte de projet — Al.G.B.r.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="premium.css">
+</head>
+<body class="project-page">
+  <a class="skip-link" href="#project-main">Aller au formulaire</a>
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand algbr-brand" href="index.html" aria-label="Al.G.B.r. Digital Studio — accueil">
+        <img class="algbr-brand-logo" src="assets/algbr-wordmark.svg" alt="Al.G.B.r. Digital Studio" width="184" height="48">
+      </a>
+      <a class="project-back" href="index.html#services" data-project-i18n="nav.back">← Retour au site</a>
+      <div class="lang-switch" aria-label="Langue">
+        <button class="active" data-project-lang="fr" type="button">FR</button>
+        <button data-project-lang="de" type="button">DE</button>
+        <button data-project-lang="en" type="button">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="project-main">
+    <section class="project-hero">
+      <div class="shell project-hero-grid">
+        <div>
+          <p class="eyebrow" data-project-i18n="hero.eyebrow">Architecte de projet Al.G.B.r.</p>
+          <h1 data-project-i18n="hero.title">Définissons la solution avant d’écrire une ligne de code.</h1>
+          <p data-project-i18n="hero.text">Le formulaire adapte ses questions à votre site, application ou écosystème digital. Vos réponses restent sur votre appareil jusqu’à votre décision de les envoyer.</p>
+        </div>
+        <div class="project-trust-card">
+          <strong data-project-i18n="hero.trustTitle">À la fin, vous obtenez</strong>
+          <ul>
+            <li data-project-i18n="hero.trust1">un résumé clair du besoin ;</li>
+            <li data-project-i18n="hero.trust2">une architecture recommandée ;</li>
+            <li data-project-i18n="hero.trust3">les fonctions prioritaires ;</li>
+            <li data-project-i18n="hero.trust4">un brief à copier, télécharger ou envoyer.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-builder-section">
+      <div class="shell project-builder-grid">
+        <aside class="project-sidebar" aria-label="Progression du projet">
+          <div class="project-progress-card">
+            <div class="project-progress-heading"><span data-project-i18n="progress.label">Progression</span><strong id="progress-percent">0 %</strong></div>
+            <div class="project-progress-track" aria-hidden="true"><span id="progress-bar"></span></div>
+          </div>
+          <ol class="project-step-list" id="project-step-list">
+            <li class="active"><button type="button" data-goto-step="0"><span>1</span><div><strong data-project-i18n="steps.type">Projet</strong><small data-project-i18n="steps.typeHint">format et périmètre</small></div></button></li>
+            <li><button type="button" data-goto-step="1"><span>2</span><div><strong data-project-i18n="steps.business">Activité</strong><small data-project-i18n="steps.businessHint">cible et objectif</small></div></button></li>
+            <li><button type="button" data-goto-step="2"><span>3</span><div><strong data-project-i18n="steps.experience">Expérience</strong><small data-project-i18n="steps.experienceHint">pages et parcours</small></div></button></li>
+            <li><button type="button" data-goto-step="3"><span>4</span><div><strong data-project-i18n="steps.features">Fonctions</strong><small data-project-i18n="steps.featuresHint">données et outils</small></div></button></li>
+            <li><button type="button" data-goto-step="4"><span>5</span><div><strong data-project-i18n="steps.design">Design</strong><small data-project-i18n="steps.designHint">identité et contenus</small></div></button></li>
+            <li><button type="button" data-goto-step="5"><span>6</span><div><strong data-project-i18n="steps.delivery">Livraison</strong><small data-project-i18n="steps.deliveryHint">budget et support</small></div></button></li>
+            <li><button type="button" data-goto-step="6"><span>7</span><div><strong data-project-i18n="steps.summary">Résumé</strong><small data-project-i18n="steps.summaryHint">architecture proposée</small></div></button></li>
+          </ol>
+          <div class="live-scope" aria-live="polite">
+            <p class="scope-label" data-project-i18n="scope.label">Carte du projet</p>
+            <h2 id="scope-title" data-project-i18n="scope.empty">Votre solution apparaîtra ici.</h2>
+            <div id="scope-tags" class="scope-tags"></div>
+            <p id="scope-note" data-project-i18n="scope.note">Les recommandations évolueront avec vos réponses.</p>
+          </div>
+          <button id="clear-draft" class="text-button" type="button" data-project-i18n="actions.clear">Effacer le brouillon local</button>
+        </aside>
+
+        <form id="project-architect-form" class="project-wizard" novalidate>
+          <input type="hidden" name="briefVersion" value="Al.G.B.r. Project Architect V1.3">
+
+          <section class="wizard-step active" data-step="0">
+            <div class="wizard-heading">
+              <p class="step-kicker">01</p>
+              <h2 data-project-i18n="type.title">Que souhaitez-vous construire ?</h2>
+              <p data-project-i18n="type.text">Choisissez le point de départ le plus proche. Le périmètre pourra être ajusté ensuite.</p>
+            </div>
+            <div class="project-type-grid">
+              <label class="project-type-card">
+                <input type="radio" name="projectType" value="website" required>
+                <span class="type-icon">WEB</span>
+                <strong data-project-i18n="type.website">Site internet</strong>
+                <small data-project-i18n="type.websiteText">Landing page, site vitrine, services, portfolio, e-commerce ou contenu.</small>
+              </label>
+              <label class="project-type-card">
+                <input type="radio" name="projectType" value="app" required>
+                <span class="type-icon">APP</span>
+                <strong data-project-i18n="type.app">Application</strong>
+                <small data-project-i18n="type.appText">Application web, PWA, iOS, Android, espace client ou outil interne.</small>
+              </label>
+              <label class="project-type-card ecosystem-card">
+                <input type="radio" name="projectType" value="ecosystem" required>
+                <span class="type-icon">360°</span>
+                <strong data-project-i18n="type.ecosystem">Écosystème digital</strong>
+                <small data-project-i18n="type.ecosystemText">Site + CRM + réservation + application + collecte cloud et automatisations.</small>
+              </label>
+              <label class="project-type-card">
+                <input type="radio" name="projectType" value="support" required>
+                <span class="type-icon">FIX</span>
+                <strong data-project-i18n="type.support">Refonte ou support</strong>
+                <small data-project-i18n="type.supportText">Audit, correction, migration, optimisation ou évolution d’une solution existante.</small>
+              </label>
+            </div>
+            <button class="lune-preset" id="apply-lune-preset" type="button">
+              <span class="lune-preset-mark" aria-hidden="true">Lune Beauty</span>
+              <span><strong data-project-i18n="type.lunePreset">Utiliser l’architecture Lune Beauty comme base</strong><small data-project-i18n="type.lunePresetText">Site, services, Skin Check, CRM, réservation, avis et données cloud.</small></span>
+              <b>→</b>
+            </button>
+          </section>
+
+          <section class="wizard-step" data-step="1" hidden>
+            <div class="wizard-heading">
+              <p class="step-kicker">02</p>
+              <h2 data-project-i18n="business.title">Votre activité et le résultat attendu</h2>
+              <p data-project-i18n="business.text">Ces informations permettent d’adapter le parcours, le ton et les priorités commerciales.</p>
+            </div>
+            <div class="field-grid two-columns">
+              <label><span data-project-i18n="fields.contactName">Votre nom *</span><input type="text" name="contactName" autocomplete="name" required placeholder="Nom et prénom"></label>
+              <label><span data-project-i18n="fields.email">E-mail *</span><input type="email" name="email" autocomplete="email" required placeholder="vous@exemple.com"></label>
+              <label><span data-project-i18n="fields.company">Entreprise ou projet *</span><input type="text" name="company" required placeholder="Nom de l’activité"></label>
+              <label><span data-project-i18n="fields.phone">Téléphone</span><input type="tel" name="phone" autocomplete="tel" placeholder="+49 ..."></label>
+              <label><span data-project-i18n="fields.sector">Secteur *</span><input type="text" name="sector" required placeholder="Beauté, conseil, commerce, formation..."></label>
+              <label><span data-project-i18n="fields.country">Pays / marché principal</span><input type="text" name="market" placeholder="Allemagne, Europe, international..."></label>
+              <label class="full-span"><span data-project-i18n="fields.currentUrl">Site ou application actuelle</span><input type="url" name="currentUrl" placeholder="https://..."></label>
+              <label class="full-span"><span data-project-i18n="fields.offer">Que vendez-vous ou proposez-vous ? *</span><textarea name="offer" rows="3" required placeholder="Services, produits, abonnements, rendez-vous..."></textarea></label>
+              <label class="full-span"><span data-project-i18n="fields.audience">À qui s’adresse le projet ? *</span><textarea name="audience" rows="3" required placeholder="Profil, besoins, lieu, niveau de connaissance..."></textarea></label>
+              <label class="full-span"><span data-project-i18n="fields.mainGoal">Objectif principal *</span><select name="mainGoal" required><option value="">Choisir</option><option value="leads">Recevoir plus de demandes</option><option value="booking">Générer des réservations</option><option value="sales">Vendre en ligne</option><option value="credibility">Renforcer la crédibilité</option><option value="operations">Simplifier le travail interne</option><option value="data">Collecter et exploiter des données</option><option value="community">Créer un espace client ou une communauté</option><option value="other">Autre</option></select></label>
+              <label class="full-span"><span data-project-i18n="fields.success">Comment saurez-vous que le projet fonctionne ?</span><textarea name="successMetric" rows="3" placeholder="Ex. 20 demandes par mois, moins d’appels manuels, réservation en 2 minutes..."></textarea></label>
+            </div>
+          </section>
+
+          <section class="wizard-step" data-step="2" hidden>
+            <div class="wizard-heading">
+              <p class="step-kicker">03</p>
+              <h2 data-project-i18n="experience.title">Pages, écrans et parcours essentiels</h2>
+              <p data-project-i18n="experience.text">Sélectionnez ce que les visiteurs, clients ou collaborateurs doivent pouvoir voir et accomplir.</p>
+            </div>
+
+            <fieldset class="choice-fieldset" data-project-scope="website ecosystem support">
+              <legend data-project-i18n="experience.websitePages">Pages du site</legend>
+              <div class="choice-grid compact">
+                <label><input type="checkbox" name="websitePages" value="Accueil"><span>Accueil</span></label>
+                <label><input type="checkbox" name="websitePages" value="À propos"><span>À propos</span></label>
+                <label><input type="checkbox" name="websitePages" value="Services"><span>Services</span></label>
+                <label><input type="checkbox" name="websitePages" value="Tarifs"><span>Tarifs</span></label>
+                <label><input type="checkbox" name="websitePages" value="Portfolio"><span>Portfolio / références</span></label>
+                <label><input type="checkbox" name="websitePages" value="Équipe"><span>Équipe</span></label>
+                <label><input type="checkbox" name="websitePages" value="Blog"><span>Blog / actualités</span></label>
+                <label><input type="checkbox" name="websitePages" value="FAQ"><span>FAQ</span></label>
+                <label><input type="checkbox" name="websitePages" value="Contact"><span>Contact</span></label>
+                <label><input type="checkbox" name="websitePages" value="Légal"><span>Pages légales</span></label>
+                <label><input type="checkbox" name="websitePages" value="Multilingue"><span>Plusieurs langues</span></label>
+                <label><input type="checkbox" name="websitePages" value="Autre"><span>Autres pages</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="choice-fieldset" data-project-scope="app ecosystem support">
+              <legend data-project-i18n="experience.appScreens">Espaces de l’application</legend>
+              <div class="choice-grid compact">
+                <label><input type="checkbox" name="appScreens" value="Onboarding"><span>Onboarding</span></label>
+                <label><input type="checkbox" name="appScreens" value="Connexion"><span>Connexion / compte</span></label>
+                <label><input type="checkbox" name="appScreens" value="Dashboard"><span>Dashboard</span></label>
+                <label><input type="checkbox" name="appScreens" value="Profil"><span>Profil utilisateur</span></label>
+                <label><input type="checkbox" name="appScreens" value="Catalogue"><span>Catalogue / services</span></label>
+                <label><input type="checkbox" name="appScreens" value="Réservation"><span>Réservation</span></label>
+                <label><input type="checkbox" name="appScreens" value="Messagerie"><span>Messagerie</span></label>
+                <label><input type="checkbox" name="appScreens" value="Notifications"><span>Notifications</span></label>
+                <label><input type="checkbox" name="appScreens" value="Paiement"><span>Paiement</span></label>
+                <label><input type="checkbox" name="appScreens" value="Admin"><span>Administration</span></label>
+                <label><input type="checkbox" name="appScreens" value="Rapports"><span>Rapports / statistiques</span></label>
+                <label><input type="checkbox" name="appScreens" value="Autre"><span>Autres écrans</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field-grid two-columns">
+              <label><span data-project-i18n="fields.primaryAction">Action principale attendue *</span><input type="text" name="primaryAction" required placeholder="Réserver, acheter, demander un devis, suivre une activité..."></label>
+              <label><span data-project-i18n="fields.userRoles">Types d’utilisateurs</span><input type="text" name="userRoles" placeholder="Visiteur, client, employé, administrateur..."></label>
+              <label class="full-span"><span data-project-i18n="fields.userJourney">Décrivez le parcours idéal</span><textarea name="userJourney" rows="4" placeholder="Ex. découvrir un service → faire un Skin Check → choisir une prestation → demander un rendez-vous → recevoir une confirmation."></textarea></label>
+              <label class="full-span"><span data-project-i18n="fields.painPoints">Qu’est-ce qui fonctionne mal aujourd’hui ?</span><textarea name="painPoints" rows="3" placeholder="Trop d’appels, informations dispersées, réservations manuelles, site lent..."></textarea></label>
+            </div>
+          </section>
+
+          <section class="wizard-step" data-step="3" hidden>
+            <div class="wizard-heading">
+              <p class="step-kicker">04</p>
+              <h2 data-project-i18n="features.title">Fonctions, données et intégrations</h2>
+              <p data-project-i18n="features.text">Cette étape détermine la vraie architecture technique et les responsabilités de sécurité.</p>
+            </div>
+
+            <fieldset class="choice-fieldset featured-fieldset">
+              <legend data-project-i18n="features.modules">Modules souhaités</legend>
+              <div class="choice-grid feature-choice-grid">
+                <label><input type="checkbox" name="modules" value="Formulaires"><span><b>Formulaires avancés</b><small>contact, devis, inscription</small></span></label>
+                <label><input type="checkbox" name="modules" value="Booking"><span><b>Réservation / booking</b><small>créneaux, confirmation, rappels</small></span></label>
+                <label><input type="checkbox" name="modules" value="CRM"><span><b>CRM</b><small>clients, historique, suivi</small></span></label>
+                <label><input type="checkbox" name="modules" value="Service Generator"><span><b>Gestion des services</b><small>pages, prix, durées, options</small></span></label>
+                <label><input type="checkbox" name="modules" value="Questionnaire"><span><b>Questionnaire / diagnostic</b><small>Skin Check, audit, orientation</small></span></label>
+                <label><input type="checkbox" name="modules" value="Avis"><span><b>Avis clients</b><small>collecte, consentement, publication</small></span></label>
+                <label><input type="checkbox" name="modules" value="Paiement"><span><b>Paiement en ligne</b><small>acompte, achat, abonnement</small></span></label>
+                <label><input type="checkbox" name="modules" value="E-commerce"><span><b>Boutique</b><small>produits, panier, commandes</small></span></label>
+                <label><input type="checkbox" name="modules" value="Espace client"><span><b>Espace client</b><small>compte, documents, historique</small></span></label>
+                <label><input type="checkbox" name="modules" value="Cloud"><span><b>Données cloud</b><small>synchronisation et sauvegarde</small></span></label>
+                <label><input type="checkbox" name="modules" value="Automatisation"><span><b>Automatisations</b><small>e-mails, tâches, notifications</small></span></label>
+                <label><input type="checkbox" name="modules" value="IA"><span><b>IA / analyse</b><small>classement, résumé, conseil</small></span></label>
+                <label><input type="checkbox" name="modules" value="Analytics"><span><b>Statistiques</b><small>trafic, conversion, activité</small></span></label>
+                <label><input type="checkbox" name="modules" value="Documents"><span><b>Documents / uploads</b><small>photos, PDF, justificatifs</small></span></label>
+                <label><input type="checkbox" name="modules" value="API"><span><b>API externe</b><small>services tiers ou métier</small></span></label>
+                <label><input type="checkbox" name="modules" value="Notifications"><span><b>Notifications</b><small>e-mail, push, SMS</small></span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="choice-fieldset">
+              <legend data-project-i18n="features.integrations">Services à connecter</legend>
+              <div class="choice-grid compact">
+                <label><input type="checkbox" name="integrations" value="Google Calendar"><span>Google Calendar</span></label>
+                <label><input type="checkbox" name="integrations" value="Microsoft"><span>Microsoft 365</span></label>
+                <label><input type="checkbox" name="integrations" value="Stripe"><span>Stripe</span></label>
+                <label><input type="checkbox" name="integrations" value="PayPal"><span>PayPal</span></label>
+                <label><input type="checkbox" name="integrations" value="WhatsApp"><span>WhatsApp</span></label>
+                <label><input type="checkbox" name="integrations" value="Instagram"><span>Instagram</span></label>
+                <label><input type="checkbox" name="integrations" value="Newsletter"><span>Newsletter</span></label>
+                <label><input type="checkbox" name="integrations" value="Maps"><span>Google Maps</span></label>
+                <label><input type="checkbox" name="integrations" value="Existing CRM"><span>CRM existant</span></label>
+                <label><input type="checkbox" name="integrations" value="Custom"><span>API métier</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field-grid two-columns">
+              <label><span data-project-i18n="fields.platforms">Plateformes souhaitées</span><select name="platforms"><option>Web responsive</option><option>PWA installable</option><option>Web + iOS + Android</option><option>iOS uniquement</option><option>Android uniquement</option><option>À recommander</option></select></label>
+              <label><span data-project-i18n="fields.login">Connexion utilisateur</span><select name="login"><option>Aucune</option><option>E-mail et mot de passe</option><option>Google / Apple / Microsoft</option><option>Code magique</option><option>À recommander</option></select></label>
+              <label class="full-span"><span data-project-i18n="fields.dataCollected">Quelles données seront collectées ?</span><textarea name="dataCollected" rows="3" placeholder="Coordonnées, réservations, photos, réponses au questionnaire, paiement, données de santé..."></textarea></label>
+              <label><span data-project-i18n="fields.sensitiveData">Données sensibles ?</span><select name="sensitiveData"><option>Non</option><option>Oui, données personnelles</option><option>Oui, photos / santé / biométrie</option><option>Je ne sais pas</option></select></label>
+              <label><span data-project-i18n="fields.dataRegion">Lieu de stockage souhaité</span><select name="dataRegion"><option>Union européenne</option><option>Allemagne</option><option>Sans préférence</option><option>À recommander</option></select></label>
+              <label class="full-span"><span data-project-i18n="fields.adminNeeds">Que doit pouvoir gérer l’administrateur ?</span><textarea name="adminNeeds" rows="3" placeholder="Services, prix, clients, réservations, contenus, utilisateurs, statistiques..."></textarea></label>
+              <label class="full-span"><span data-project-i18n="fields.automationNeeds">Quelles tâches souhaitez-vous automatiser ?</span><textarea name="automationNeeds" rows="3" placeholder="Confirmation, rappels, classement de demandes, relances, génération de pages..."></textarea></label>
+            </div>
+          </section>
+
+          <section class="wizard-step" data-step="4" hidden>
+            <div class="wizard-heading">
+              <p class="step-kicker">05</p>
+              <h2 data-project-i18n="design.title">Identité, contenu et niveau de finition</h2>
+              <p data-project-i18n="design.text">Nous vérifions ce qui existe déjà et ce qui doit être créé avant le développement.</p>
+            </div>
+            <div class="field-grid two-columns">
+              <label><span data-project-i18n="fields.brandStatus">Identité visuelle</span><select name="brandStatus"><option>Logo, couleurs et règles disponibles</option><option>Logo disponible, identité à compléter</option><option>Tout est à créer</option><option>Refonte souhaitée</option></select></label>
+              <label><span data-project-i18n="fields.contentStatus">Contenus</span><select name="contentStatus"><option>Textes et images prêts</option><option>Textes prêts, images à produire</option><option>Images prêtes, textes à rédiger</option><option>Tout est à créer</option></select></label>
+              <label><span data-project-i18n="fields.style">Style souhaité</span><select name="visualStyle"><option>Élégant et premium</option><option>Moderne et minimal</option><option>Chaleureux et humain</option><option>Coloré et créatif</option><option>Technique et professionnel</option><option>À définir ensemble</option></select></label>
+              <label><span data-project-i18n="fields.languages">Langues</span><input type="text" name="languages" placeholder="Français, allemand, anglais..."></label>
+              <label class="full-span"><span data-project-i18n="fields.colors">Couleurs, polices ou éléments à conserver</span><input type="text" name="brandNotes" placeholder="Ex. violet, typographie actuelle, logo..."></label>
+              <label class="full-span"><span data-project-i18n="fields.references">Sites ou applications de référence</span><textarea name="references" rows="3" placeholder="Ajoutez les liens et précisez ce que vous aimez ou n’aimez pas."></textarea></label>
+              <label class="full-span"><span data-project-i18n="fields.assetLinks">Lien vers vos documents et médias</span><input type="url" name="assetLinks" placeholder="Google Drive, Dropbox, OneDrive..."><small data-project-i18n="fields.assetHint">Pour votre sécurité, le formulaire n’envoie aucun fichier directement.</small></label>
+              <fieldset class="full-span choice-fieldset simple-fieldset">
+                <legend data-project-i18n="design.quality">Priorités de qualité</legend>
+                <div class="choice-grid compact">
+                  <label><input type="checkbox" name="quality" value="Mobile"><span>Mobile en priorité</span></label>
+                  <label><input type="checkbox" name="quality" value="SEO"><span>Référencement SEO</span></label>
+                  <label><input type="checkbox" name="quality" value="Performance"><span>Performance</span></label>
+                  <label><input type="checkbox" name="quality" value="Accessibilité"><span>Accessibilité</span></label>
+                  <label><input type="checkbox" name="quality" value="Sécurité"><span>Sécurité</span></label>
+                  <label><input type="checkbox" name="quality" value="Animations"><span>Animations premium</span></label>
+                </div>
+              </fieldset>
+            </div>
+          </section>
+
+          <section class="wizard-step" data-step="5" hidden>
+            <div class="wizard-heading">
+              <p class="step-kicker">06</p>
+              <h2 data-project-i18n="delivery.title">Budget, calendrier et accompagnement</h2>
+              <p data-project-i18n="delivery.text">Ces réponses servent à proposer un périmètre réaliste et une première phase utile.</p>
+            </div>
+            <div class="field-grid two-columns">
+              <label><span data-project-i18n="fields.budget">Budget indicatif *</span><select name="budget" required><option value="">Choisir</option><option>Moins de 1 000 €</option><option>1 000 – 3 000 €</option><option>3 000 – 8 000 €</option><option>8 000 – 20 000 €</option><option>20 000 € +</option><option>À définir après étude</option></select></label>
+              <label><span data-project-i18n="fields.timeline">Délai souhaité *</span><select name="timeline" required><option value="">Choisir</option><option>2–4 semaines</option><option>1–2 mois</option><option>3–6 mois</option><option>6 mois +</option><option>Flexible</option></select></label>
+              <label><span data-project-i18n="fields.launchDate">Date de lancement importante</span><input type="date" name="launchDate"></label>
+              <label><span data-project-i18n="fields.hosting">Domaine et hébergement</span><select name="hosting"><option>Déjà disponibles</option><option>Domaine disponible, hébergement à choisir</option><option>Tout est à mettre en place</option><option>Je ne sais pas</option></select></label>
+              <fieldset class="full-span choice-fieldset simple-fieldset">
+                <legend data-project-i18n="delivery.support">Après la mise en ligne</legend>
+                <div class="choice-grid compact">
+                  <label><input type="checkbox" name="support" value="Formation"><span>Formation</span></label>
+                  <label><input type="checkbox" name="support" value="Maintenance"><span>Maintenance</span></label>
+                  <label><input type="checkbox" name="support" value="Contenu"><span>Mises à jour de contenu</span></label>
+                  <label><input type="checkbox" name="support" value="Monitoring"><span>Surveillance technique</span></label>
+                  <label><input type="checkbox" name="support" value="Evolution"><span>Évolutions régulières</span></label>
+                  <label><input type="checkbox" name="support" value="Analytics review"><span>Analyse mensuelle</span></label>
+                </div>
+              </fieldset>
+              <label class="full-span"><span data-project-i18n="fields.constraints">Contraintes, obligations ou informations importantes</span><textarea name="constraints" rows="4" placeholder="Réglementation, hébergeur imposé, accessibilité, système existant, dépendances..."></textarea></label>
+              <label class="full-span"><span data-project-i18n="fields.extra">Autre chose à nous signaler ?</span><textarea name="extra" rows="4" placeholder="Expliquez librement le contexte ou les idées encore incertaines."></textarea></label>
+              <label class="consent full-span"><input type="checkbox" name="consent" required><span data-project-i18n-html="fields.consent">J’accepte que ces informations soient utilisées pour étudier ma demande. Voir la <a href="privacy.html">confidentialité</a>.</span></label>
+            </div>
+          </section>
+
+          <section class="wizard-step" data-step="6" hidden>
+            <div class="wizard-heading">
+              <p class="step-kicker">07</p>
+              <h2 data-project-i18n="summary.title">Votre première architecture de projet</h2>
+              <p data-project-i18n="summary.text">Ce résumé n’est pas un devis automatique. Il sert à démarrer l’échange avec un périmètre compréhensible.</p>
+            </div>
+            <div class="summary-layout">
+              <article class="recommendation-card">
+                <p class="scope-label" data-project-i18n="summary.recommendation">Recommandation initiale</p>
+                <h3 id="recommendation-title">—</h3>
+                <p id="recommendation-text">—</p>
+                <div id="recommendation-stack" class="architecture-stack"></div>
+              </article>
+              <article class="summary-card">
+                <div class="summary-card-heading"><h3 data-project-i18n="summary.brief">Brief structuré</h3><span id="summary-completeness">0 %</span></div>
+                <div id="structured-summary" class="structured-summary"></div>
+              </article>
+            </div>
+            <div class="summary-actions">
+              <button id="copy-project-brief" class="button button-secondary" type="button" data-project-i18n="actions.copy">Copier le brief</button>
+              <button id="download-project-brief" class="button button-secondary" type="button" data-project-i18n="actions.download">Télécharger .txt</button>
+              <button id="download-project-json" class="button button-secondary" type="button">JSON</button>
+              <a id="email-project-brief" class="button button-primary" href="#" data-project-i18n="actions.email">Envoyer à Al.G.B.r.</a>
+            </div>
+            <p id="submission-note" class="submission-note" data-project-i18n="summary.privacy">Rien n’est envoyé automatiquement. Le bouton e-mail ouvre votre messagerie avec un résumé ; le fichier téléchargé contient le brief complet.</p>
+          </section>
+
+          <div class="wizard-navigation">
+            <button id="previous-step" class="button button-secondary" type="button" data-project-i18n="actions.previous">Précédent</button>
+            <p id="wizard-status" role="status" aria-live="polite"></p>
+            <button id="next-step" class="button button-primary" type="button" data-project-i18n="actions.next">Continuer</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="project-reference-section">
+      <div class="shell reference-project-card">
+        <div class="reference-project-copy">
+          <p class="eyebrow" data-project-i18n="reference.eyebrow">Architecture de référence</p>
+          <img class="reference-lune-logo" src="assets/lune-beauty-logo-web.png" alt="Logo officiel Lune Beauty" width="760" height="760" loading="lazy">
+          <h2>Lune Beauty</h2>
+          <p data-project-i18n="reference.text">Un projet métier complet : le site présente l’offre et les tarifs, le Skin Check oriente la cliente, le générateur de réservation structure la demande, le CRM centralise le suivi et les données cloud relient l’ensemble.</p>
+          <a class="button button-primary project-link" data-project="luneBeauty" href="https://www.lunebeauty.de/" target="_blank" rel="noopener" data-project-i18n="reference.view">Voir Lune Beauty</a>
+        </div>
+        <div class="reference-architecture" aria-label="Architecture Lune Beauty">
+          <span>Site public</span><i>→</i><span>Services</span><i>→</i><span>Skin Check</span><i>→</i><span>Booking</span><i>→</i><span>CRM</span><i>→</i><span>Cloud</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer project-footer">
+    <div class="shell footer-bottom"><p>© <span id="year"></span> Al.G.B.r.</p><p><a href="privacy.html">Confidentialité</a> · <a href="legal.html">Mentions légales</a> · <a href="mailto:algbr@gmail.com">algbr@gmail.com</a></p></div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="project.js" defer></script>
+</body>
+</html>

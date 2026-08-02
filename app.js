@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Al.G.B.r.">
-  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#3266f5"/><stop offset=".58" stop-color="#7258e9"/><stop offset="1" stop-color="#19a9a5"/></linearGradient></defs>
-  <rect width="64" height="64" rx="18" fill="#0b1020"/>
-  <path d="M17 44 27 18h8l12 26h-8l-2-6H26l-2 6zm12-12h6l-3-8z" fill="url(#g)"/>
-  <circle cx="48" cy="43" r="3.5" fill="#19a9a5"/>
-</svg>
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page introuvable — Al.G.B.r.</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="premium.css"></head><body class="legal-page"><main><section class="legal-hero" style="min-height:100vh;display:grid;place-items:center;text-align:center"><div class="shell"><p class="eyebrow">Erreur 404</p><h1>Cette page n’existe pas.</h1><p>Revenez à l’accueil pour continuer.</p><a class="button button-primary" href="index.html">Retour à l’accueil</a></div></section></main></body></html>

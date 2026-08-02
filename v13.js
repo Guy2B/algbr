@@ -1,29 +1,20 @@
-# Mise à jour V1.2 — Project Architect
-
-## Objectif
-
-Transformer la demande de devis en un parcours professionnel qui recueille suffisamment d’informations pour cadrer un site, une application ou un écosystème digital avant l’échange commercial.
-
-## Modifications
-
-- ajout de `project.html` et `project.js` ;
-- wizard adaptatif en sept étapes ;
-- sauvegarde locale et reprise du brouillon ;
-- recommandation d’architecture calculée localement ;
-- copie, export TXT, export JSON et e-mail ;
-- endpoint cloud facultatif dans `config.js` ;
-- nouvelles entrées de navigation et nouveaux appels à l’action ;
-- remplacement de l’ancien mini-brief ;
-- présentation renforcée de Lune Beauty comme écosystème digital de référence ;
-- preset Lune Beauty : site, services, Skin Check, booking, CRM, avis, cloud et automatisations ;
-- mise à jour de la confidentialité, du sitemap et de la documentation.
-
-## Installation sur GitHub
-
-1. Décompresser le patch V1.2.
-2. Envoyer son contenu à la racine du dépôt `algbr`.
-3. Accepter le remplacement automatique des fichiers de même nom.
-4. Ne pas supprimer `.github/workflows`.
-5. Commit conseillé : `Add Project Architect and Lune Beauty case study`.
-6. Attendre le déploiement GitHub Pages vert.
-7. Tester `/project.html` et `/project.html?preset=lune`.
+(() => {
+  const dict = {
+    fr: {
+      'nav.configure':'Configurer un projet','hero.configure':'Configurer mon projet','work.beauty.type':'Écosystème digital métier','work.beauty.text':'Une architecture complète reliant le site public, le catalogue de services, le Lune Skin Check, le générateur de réservation, le CRM, les avis et la collecte de données cloud.','work.arch.title':'Lune Beauty : de la vitrine à l’outil métier','work.arch.text':'Une référence pour les entreprises qui souhaitent réunir acquisition, expérience client, gestion et données dans un même système.','launcher.eyebrow':'Architecte de projet','launcher.title':'Un bon devis commence par les bonnes questions.','launcher.text':'Choisissez le type de projet. Le formulaire vous guide ensuite sur les objectifs, pages, fonctions, données, intégrations, design, budget et accompagnement.','launcher.cta':'Ouvrir le configurateur complet','launcher.web':'Site internet','launcher.webText':'Pages, contenus, conversion, SEO, réservation et administration.','launcher.app':'Application','launcher.appText':'Utilisateurs, écrans, données, plateformes, API et notifications.','launcher.ecosystem':'Écosystème digital','launcher.ecosystemText':'Site, CRM, booking, espace client, cloud et automatisations.','launcher.lune':'Partir d’une architecture de référence','launcher.luneText':'Préselectionne une architecture similaire au projet Lune Beauty, à adapter à votre activité.','contact.configure':'Configurer mon projet'
+    },
+    de: {
+      'nav.configure':'Projekt konfigurieren','hero.configure':'Mein Projekt konfigurieren','work.beauty.type':'Digitales Geschäftssystem','work.beauty.text':'Eine vollständige Architektur aus öffentlicher Website, Leistungskatalog, Lune Skin Check, Buchungsgenerator, CRM, Bewertungen und Cloud-Datenerfassung.','work.arch.title':'Lune Beauty: von der Website zum Geschäftssystem','work.arch.text':'Eine Referenz für Unternehmen, die Kundengewinnung, Erlebnis, Verwaltung und Daten in einem System verbinden möchten.','launcher.eyebrow':'Projektarchitekt','launcher.title':'Ein gutes Angebot beginnt mit den richtigen Fragen.','launcher.text':'Wählen Sie den Projekttyp. Das Formular führt durch Ziele, Seiten, Funktionen, Daten, Integrationen, Design, Budget und Betreuung.','launcher.cta':'Vollständigen Konfigurator öffnen','launcher.web':'Website','launcher.webText':'Seiten, Inhalte, Conversion, SEO, Buchung und Verwaltung.','launcher.app':'Anwendung','launcher.appText':'Benutzer, Ansichten, Daten, Plattformen, APIs und Benachrichtigungen.','launcher.ecosystem':'Digitales Ökosystem','launcher.ecosystemText':'Website, CRM, Buchung, Kundenbereich, Cloud und Automatisierungen.','launcher.lune':'Mit einer Referenzarchitektur starten','launcher.luneText':'Wählt eine dem Lune-Beauty-Projekt ähnliche Architektur vor, die an Ihr Geschäft angepasst wird.','contact.configure':'Projekt konfigurieren'
+    },
+    en: {
+      'nav.configure':'Configure a project','hero.configure':'Configure my project','work.beauty.type':'Digital business ecosystem','work.beauty.text':'A complete architecture connecting the public website, service catalogue, Lune Skin Check, booking generator, CRM, reviews and cloud data collection.','work.arch.title':'Lune Beauty: from showcase to business system','work.arch.text':'A reference for businesses that want to connect acquisition, customer experience, operations and data in one system.','launcher.eyebrow':'Project Architect','launcher.title':'A strong proposal starts with the right questions.','launcher.text':'Choose the project type. The form then guides you through goals, pages, features, data, integrations, design, budget and support.','launcher.cta':'Open the full configurator','launcher.web':'Website','launcher.webText':'Pages, content, conversion, SEO, booking and administration.','launcher.app':'Application','launcher.appText':'Users, screens, data, platforms, APIs and notifications.','launcher.ecosystem':'Digital ecosystem','launcher.ecosystemText':'Website, CRM, booking, client area, cloud and automations.','launcher.lune':'Start from a reference architecture','launcher.luneText':'Preselects an architecture similar to the Lune Beauty project, ready to adapt to your business.','contact.configure':'Configure my project'
+    }
+  };
+  function apply(){
+    let lang=localStorage.getItem('algbr-lang')||(navigator.language||'fr').slice(0,2);
+    if(!dict[lang]) lang='fr';
+    document.querySelectorAll('[data-v12-i18n]').forEach(el=>{el.textContent=dict[lang][el.dataset.v12I18n]||dict.fr[el.dataset.v12I18n]||el.textContent;});
+  }
+  document.querySelectorAll('[data-lang]').forEach(btn=>btn.addEventListener('click',()=>setTimeout(apply,0)));
+  apply();
+})();

@@ -1,1 +1,35 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mentions légales — Al.G.B.r.</title><link rel="icon" href="assets/favicon.svg"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="premium.css"></head><body class="legal-page"><header class="site-header"><div class="shell nav-wrap"><a class="brand algbr-brand" href="index.html"><img class="algbr-brand-logo" src="assets/algbr-wordmark.svg" alt="Al.G.B.r. Digital Studio" width="184" height="48"></a></div></header><main><section class="legal-hero"><div class="shell"><p class="eyebrow">Informations</p><h1>Mentions légales</h1></div></section><article class="shell legal-content"><p class="placeholder"><strong>À compléter avant publication commerciale :</strong> identité juridique, adresse, numéro d’entreprise, responsable de publication et coordonnées de l’hébergeur.</p><h2>Éditeur</h2><p>Al.G.B.r. — [forme juridique à compléter]<br>[Adresse complète]<br>[Numéro d’immatriculation / TVA]<br>E-mail : <a href="mailto:algbr@gmail.com">algbr@gmail.com</a></p><h2>Responsable de publication</h2><p>[Nom du responsable]</p><h2>Hébergement</h2><p>Renseignez ici GitHub, Firebase ou l’hébergeur finalement utilisé, avec ses coordonnées légales.</p><h2>Propriété intellectuelle</h2><p>Les textes, éléments graphiques, logos, interfaces et codes présentés sur ce site sont protégés. Toute reproduction non autorisée est interdite.</p><h2>Responsabilité</h2><p>Les informations sont présentées à titre général. Les offres finales sont définies dans un devis ou contrat précisant le périmètre et les responsabilités.</p><a class="back-link" href="index.html">← Retour au site</a></article></main></body></html>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Confidentialité — Al.G.B.r.</title>
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="premium.css">
+</head>
+<body class="legal-page">
+  <header class="site-header"><div class="shell nav-wrap"><a class="brand algbr-brand" href="index.html"><img class="algbr-brand-logo" src="assets/algbr-wordmark.svg" alt="Al.G.B.r. Digital Studio" width="184" height="48"></a></div></header>
+  <main>
+    <section class="legal-hero"><div class="shell"><p class="eyebrow">Données personnelles</p><h1>Politique de confidentialité</h1></div></section>
+    <article class="shell legal-content">
+      <p class="placeholder"><strong>Modèle à adapter :</strong> faites vérifier cette page selon votre pays, votre statut juridique, vos outils d’analyse et votre méthode de contact.</p>
+      <h2>Architecte de projet</h2>
+      <p>Le configurateur peut contenir votre nom, vos coordonnées, des informations sur votre activité, les fonctions souhaitées, les données envisagées, votre budget et votre calendrier.</p>
+      <p>Par défaut, les réponses sont enregistrées uniquement dans le stockage local de votre navigateur afin que vous puissiez reprendre le formulaire. Elles ne sont pas envoyées automatiquement à Al.G.B.r.</p>
+      <h2>Envoi volontaire</h2>
+      <p>Vous choisissez explicitement de copier, télécharger ou envoyer le brief. Le bouton e-mail ouvre votre propre messagerie. Si un point de collecte cloud est configuré ultérieurement, son fournisseur, sa région d’hébergement et sa durée de conservation devront être indiqués ici.</p>
+      <h2>Finalité</h2>
+      <p>Les informations reçues servent à comprendre votre besoin, proposer une architecture, préparer un devis et assurer le suivi commercial. Elles ne sont pas vendues.</p>
+      <h2>Données sensibles</h2>
+      <p>Le formulaire ne doit pas contenir de mots de passe, secrets API, données bancaires complètes, dossiers médicaux ou documents d’identité. Utilisez un lien sécurisé distinct lorsqu’un échange de fichiers est nécessaire.</p>
+      <h2>Durée de conservation</h2>
+      <p>Définissez une durée adaptée, par exemple la durée des échanges commerciaux puis une période d’archivage raisonnable. Le brouillon local peut être supprimé à tout moment avec le bouton prévu dans le configurateur.</p>
+      <h2>Vos droits</h2>
+      <p>Vous pouvez demander l’accès, la rectification ou la suppression des informations transmises en écrivant à <a href="mailto:algbr@gmail.com">algbr@gmail.com</a>.</p>
+      <h2>Cookies et mesure d’audience</h2>
+      <p>Cette version ne dépose aucun cookie publicitaire. Le stockage local est utilisé pour la langue et le brouillon du configurateur. Si un outil d’analyse est ajouté, une information ou un consentement supplémentaire peut devenir nécessaire.</p>
+      <a class="back-link" href="index.html">← Retour au site</a>
+    </article>
+  </main>
+</body>
+</html>
