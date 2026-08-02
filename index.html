@@ -1,13 +1,297 @@
-# Déployer sur GitHub Pages
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07152b">
+  <meta name="description" content="Al.G.B.r. conçoit des sites web, applications et écosystèmes numériques premium : UX, CRM, booking, cloud, automatisation et support.">
+  <meta property="og:title" content="Al.G.B.r. — Digital products that work">
+  <meta property="og:description" content="Sites, applications et écosystèmes numériques pensés pour vos clients et votre activité.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://guy2b.github.io/algbr/">
+  <meta property="og:image" content="assets/og-image.png">
+  <link rel="canonical" href="https://guy2b.github.io/algbr/">
+  <title>Al.G.B.r. — Sites, applications & écosystèmes numériques</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="premium.css">
+</head>
+<body class="premium-site">
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
 
-1. Créez un nouveau dépôt, par exemple `algbr-studio`.
-2. Envoyez tout le contenu de ce dossier à la racine.
-3. Ouvrez `Settings > Pages`.
-4. Choisissez `GitHub Actions` comme source.
-5. Le workflow `.github/workflows/pages.yml` déploie le site à chaque commit sur `main`.
+  <header class="site-header" id="top">
+    <div class="shell nav-wrap">
+      <a class="brand algbr-brand" href="#top" aria-label="Al.G.B.r. Digital Studio — accueil">
+        <img class="algbr-brand-logo" src="assets/algbr-wordmark.svg" alt="Al.G.B.r. Digital Studio" width="184" height="48">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+        <a href="#approach" data-v13-i18n="nav.approach">Approche</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#work" data-i18n="nav.work">Références</a>
+        <a href="#process" data-i18n="nav.process">Méthode</a>
+        <a href="project.html" class="nav-cta" data-v13-i18n="nav.project">Démarrer un projet</a>
+      </nav>
+      <div class="lang-switch" aria-label="Langue">
+        <button class="active" data-lang="fr" type="button">FR</button>
+        <button data-lang="de" type="button">DE</button>
+        <button data-lang="en" type="button">EN</button>
+      </div>
+    </div>
+  </header>
 
-Adresse probable :
+  <main id="main">
+    <section class="hero premium-hero section-shell">
+      <div class="hero-mesh" aria-hidden="true"></div>
+      <div class="shell premium-hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-v13-i18n="hero.eyebrow">Studio de produits numériques</p>
+          <h1 data-v13-i18n-html="hero.title">Nous transformons une idée en <span>expérience qui travaille.</span></h1>
+          <p class="hero-lead" data-v13-i18n="hero.lead">Site, application, CRM, réservation, cloud ou automatisation : nous relions les bonnes briques pour créer un système clair, élégant et réellement utile.</p>
+          <div class="hero-actions">
+            <a class="button button-primary button-shine" href="project.html" data-v13-i18n="hero.primary">Définir mon projet</a>
+            <a class="button button-secondary" href="#work" data-v13-i18n="hero.secondary">Explorer nos réalisations</a>
+          </div>
+          <div class="hero-proof" aria-label="Engagements Al.G.B.r.">
+            <div><strong>01</strong><span data-v13-i18n="hero.proof1">Comprendre avant de construire</span></div>
+            <div><strong>02</strong><span data-v13-i18n="hero.proof2">Une expérience simple à utiliser</span></div>
+            <div><strong>03</strong><span data-v13-i18n="hero.proof3">Un système prêt à évoluer</span></div>
+          </div>
+        </div>
 
-`https://VOTRE-UTILISATEUR.github.io/algbr-studio/`
+        <div class="hero-system reveal" data-parallax-root aria-label="Architecture numérique Al.G.B.r.">
+          <div class="system-orbit orbit-a"></div>
+          <div class="system-orbit orbit-b"></div>
+          <article class="system-core" data-parallax="10">
+            <div class="system-core-top"><span>Al.G.B.r.</span><small data-v13-i18n="hero.visualLabel">Votre écosystème</small></div>
+            <h2 data-v13-i18n="hero.visualTitle">Une seule expérience.<br>Des outils reliés.</h2>
+            <div class="system-flow">
+              <span class="flow-node node-web">WEB</span><i></i>
+              <span class="flow-node node-app">APP</span><i></i>
+              <span class="flow-node node-data">DATA</span><i></i>
+              <span class="flow-node node-ai">AI</span>
+            </div>
+            <div class="system-insight"><span class="pulse-dot"></span><p data-v13-i18n="hero.insight">L’information circule. Le client avance. L’équipe garde le contrôle.</p></div>
+          </article>
+          <article class="system-chip chip-crm" data-parallax="18"><span>CRM</span><small data-v13-i18n="hero.crm">Suivi client</small></article>
+          <article class="system-chip chip-booking" data-parallax="-14"><span>BOOK</span><small data-v13-i18n="hero.booking">Réservation</small></article>
+          <article class="system-chip chip-cloud" data-parallax="14"><span>CLOUD</span><small data-v13-i18n="hero.cloud">Données sécurisées</small></article>
+        </div>
+      </div>
+      <div class="shell hero-marquee" aria-label="Expertises">
+        <span>UX / UI</span><i></i><span>WEB</span><i></i><span>MOBILE</span><i></i><span>CRM</span><i></i><span>CLOUD</span><i></i><span>AUTOMATION</span><i></i><span>AI</span>
+      </div>
+    </section>
 
-Avant le premier commit, complétez `config.js`, `legal.html`, `privacy.html`, `robots.txt` et `sitemap.xml`.
+    <section id="approach" class="section story-section">
+      <div class="shell">
+        <div class="story-intro reveal">
+          <p class="eyebrow" data-v13-i18n="story.eyebrow">Une vision complète</p>
+          <h2 data-v13-i18n-html="story.title">Votre projet n’est pas seulement une page.<br><span>C’est un parcours.</span></h2>
+          <p data-v13-i18n="story.text">Nous dessinons le chemin entre la première découverte, l’action du client, votre organisation interne et les données qui permettent de mieux décider.</p>
+        </div>
+        <div class="journey-rail reveal" aria-label="Parcours de conception">
+          <article><span>01</span><strong data-v13-i18n="story.step1.title">Attirer</strong><p data-v13-i18n="story.step1.text">Une identité et un message qui donnent envie de rester.</p></article>
+          <article><span>02</span><strong data-v13-i18n="story.step2.title">Guider</strong><p data-v13-i18n="story.step2.text">Un parcours évident vers la réservation, l’achat ou la demande.</p></article>
+          <article><span>03</span><strong data-v13-i18n="story.step3.title">Organiser</strong><p data-v13-i18n="story.step3.text">CRM, administration et automatisations derrière l’interface.</p></article>
+          <article><span>04</span><strong data-v13-i18n="story.step4.title">Faire évoluer</strong><p data-v13-i18n="story.step4.text">Des données utiles pour améliorer le service sans repartir de zéro.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section premium-services">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="services.eyebrow">Ce que nous construisons</p>
+          <h2 data-v13-i18n="services.title">De la présence digitale au système métier complet.</h2>
+          <p data-v13-i18n="services.intro">Vous pouvez commencer avec une page essentielle ou concevoir dès le départ un écosystème connecté. L’architecture s’adapte à votre activité, pas l’inverse.</p>
+        </div>
+        <div class="bento-services">
+          <article class="bento-card bento-primary reveal">
+            <div class="bento-number">01</div><div class="bento-icon">↗</div>
+            <h3 data-i18n="services.web.title">Sites web</h3>
+            <p data-v13-i18n="services.web">Landing pages, sites vitrines et expériences premium conçus pour rendre votre offre évidente et générer une action.</p>
+            <div class="mini-tags"><span>Storyline</span><span>SEO</span><span>Responsive</span></div>
+            <a href="project.html?type=website" class="card-link" data-v13-i18n="services.cta">Configurer cette solution →</a>
+          </article>
+          <article class="bento-card bento-app reveal">
+            <div class="bento-number">02</div><div class="bento-icon">⌘</div>
+            <h3 data-i18n="services.app.title">Applications & outils</h3>
+            <p data-v13-i18n="services.app">Applications web, PWA, iOS et Android, espaces clients, dashboards et outils internes pensés autour des usages.</p>
+            <div class="mini-screen"><span></span><span></span><span></span><i></i></div>
+          </article>
+          <article class="bento-card bento-ecosystem reveal">
+            <div class="bento-number">03</div><div class="bento-icon">∞</div>
+            <h3 data-v13-i18n="services.ecosystem.title">Écosystèmes digitaux</h3>
+            <p data-v13-i18n="services.ecosystem.text">Site, CRM, booking, diagnostic, cloud et automatisations réunis dans une expérience cohérente.</p>
+            <div class="ecosystem-map"><span>Site</span><i></i><span>CRM</span><i></i><span>Cloud</span></div>
+            <a href="project.html?type=ecosystem" class="card-link" data-v13-i18n="services.cta">Configurer cette solution →</a>
+          </article>
+          <article class="bento-card bento-support reveal">
+            <div class="bento-number">04</div><div class="bento-icon">24</div>
+            <h3 data-i18n="services.support.title">Web support</h3>
+            <p data-v13-i18n="services.support">Maintenance, corrections, amélioration continue, disponibilité et accompagnement humain après la mise en ligne.</p>
+          </article>
+          <article class="bento-card bento-ai reveal">
+            <div class="bento-number">05</div><div class="bento-icon">✦</div>
+            <h3 data-i18n="services.automation.title">Automatisation & IA</h3>
+            <p data-v13-i18n="services.ai">Des automatisations utiles et une IA intégrée seulement lorsqu’elles réduisent réellement la charge et améliorent la décision.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section premium-work">
+      <div class="shell">
+        <div class="section-heading inverse reveal">
+          <p class="eyebrow" data-i18n="work.eyebrow">Projets de référence</p>
+          <h2 data-v13-i18n="work.title">Deux visions. Une même exigence : rendre la complexité naturelle.</h2>
+          <p data-v13-i18n="work.intro">Chaque projet commence par une expérience claire pour l’utilisateur, puis construit l’architecture nécessaire derrière l’écran.</p>
+        </div>
+
+        <article class="lune-showcase reveal">
+          <div class="lune-visual">
+            <picture>
+              <source srcset="assets/lune-beauty-hero.webp" type="image/webp">
+              <img src="assets/lune-beauty-hero.jpg" alt="Identité visuelle Lune Beauty en doré sur fond rose poudré" loading="lazy" width="512" height="512">
+            </picture>
+            <div class="lune-logo-glass">
+              <img src="assets/lune-beauty-logo-web.png" alt="Logo officiel Lune Beauty" width="760" height="760" loading="lazy">
+            </div>
+            <span class="lune-badge">CASE STUDY · BEAUTY TECH</span>
+          </div>
+          <div class="lune-copy">
+            <div class="case-meta lune-meta"><span data-v13-i18n="lune.type">Écosystème digital métier</span><span>Web · CRM · App · Cloud</span></div>
+            <h3>Lune Beauty</h3>
+            <p class="case-lead" data-v13-i18n="lune.lead">Une marque premium transformée en expérience digitale continue : découvrir, comprendre son besoin, choisir un service, réserver et être accompagné.</p>
+            <div class="lune-storyline">
+              <article><span>01</span><div><strong data-v13-i18n="lune.public.title">Expérience publique</strong><p data-v13-i18n="lune.public.text">Site, services, tarifs, identité et preuve sociale.</p></div></article>
+              <article><span>02</span><div><strong data-v13-i18n="lune.client.title">Expérience cliente</strong><p data-v13-i18n="lune.client.text">Skin Check, orientation, réservation et avis.</p></div></article>
+              <article><span>03</span><div><strong data-v13-i18n="lune.business.title">Outil métier</strong><p data-v13-i18n="lune.business.text">CRM, gestion des services, données cloud et automatisations.</p></div></article>
+            </div>
+            <div class="lune-flow" aria-label="Architecture Lune Beauty"><span>Site</span><i>→</i><span>Skin Check</span><i>→</i><span>Booking</span><i>→</i><span>CRM</span><i>→</i><span>Cloud</span></div>
+            <div class="case-actions">
+              <a class="button lune-button project-link" data-project="luneBeauty" href="https://www.lunebeauty.de/" target="_blank" rel="noopener" data-v13-i18n="lune.visit">Voir Lune Beauty</a>
+              <a class="text-link lune-text-link" href="project.html?preset=lune" data-v13-i18n="lune.use">Utiliser cette architecture comme base →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="sigma-showcase reveal">
+          <div class="sigma-copy">
+            <div class="case-meta"><span data-v13-i18n="sigma.type">Produit conçu par Al.G.B.r.</span><span>Life OS · PWA · Mobile</span></div>
+            <img class="sigma-inline-logo" src="assets/sigma-life-os-logo.svg" alt="Σ Life OS by Al.G.B.r." width="620" height="148">
+            <p class="case-lead" data-v13-i18n="sigma.lead">Un compagnon numérique qui relie tâches, projets, calendrier, finances, énergie, e-mails et signaux sociaux pour aider l’utilisateur à décider quoi faire ensuite.</p>
+            <div class="sigma-pill-row"><span>Context engine</span><span>Unified inbox</span><span>Local AI</span><span>Mobile health</span></div>
+            <a class="button button-light project-link" data-project="sigma" href="https://project-sum-b961a.web.app/app.html#dashboard" target="_blank" rel="noopener" data-v13-i18n="sigma.visit">Découvrir Σ Life OS</a>
+          </div>
+          <div class="sigma-dashboard" aria-label="Aperçu de Σ Life OS">
+            <div class="sigma-dashboard-top"><span></span><span></span><span></span><b>Σ Today</b></div>
+            <div class="sigma-dashboard-body">
+              <aside><strong>Σ</strong><i></i><i></i><i></i><i></i></aside>
+              <div><small data-v13-i18n="sigma.attention">Votre attention aujourd’hui</small><article><b>1</b><p><strong data-v13-i18n="sigma.action1">Répondre au client Martin</strong><span>8 min · priorité haute</span></p></article><article><b>2</b><p><strong data-v13-i18n="sigma.action2">Finaliser la proposition</strong><span>45 min · projet actif</span></p></article><div class="sigma-energy"><span></span></div></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="process" class="section premium-process">
+      <div class="shell process-layout">
+        <div class="process-sticky reveal">
+          <p class="eyebrow" data-i18n="process.eyebrow">Notre méthode</p>
+          <h2 data-v13-i18n="process.title">Une progression visible, sans tunnel technique.</h2>
+          <p data-v13-i18n="process.text">Vous savez ce qui est validé, ce qui reste à décider et pourquoi chaque choix compte pour l’expérience finale.</p>
+          <a class="button button-primary" href="project.html" data-v13-i18n="process.cta">Préparer mon brief</a>
+        </div>
+        <ol class="process-cards">
+          <li class="reveal"><span>01</span><div><small data-v13-i18n="process.phase">PHASE</small><h3 data-i18n="process.step1.title">Comprendre</h3><p data-v13-i18n="process.step1">Objectif, utilisateurs, parcours, données, contraintes et réussite attendue.</p></div></li>
+          <li class="reveal"><span>02</span><div><small data-v13-i18n="process.phase">PHASE</small><h3 data-i18n="process.step2.title">Prototyper</h3><p data-v13-i18n="process.step2">Une première expérience concrète pour valider le rythme, les contenus et les actions.</p></div></li>
+          <li class="reveal"><span>03</span><div><small data-v13-i18n="process.phase">PHASE</small><h3 data-i18n="process.step3.title">Construire</h3><p data-v13-i18n="process.step3">Développement, architecture cloud, administration, tests, accessibilité et performance.</p></div></li>
+          <li class="reveal"><span>04</span><div><small data-v13-i18n="process.phase">PHASE</small><h3 data-i18n="process.step4.title">Lancer & accompagner</h3><p data-v13-i18n="process.step4">Mise en ligne, prise en main, support, mesure et évolution continue.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section project-architect-spotlight">
+      <div class="shell architect-card reveal">
+        <div class="architect-copy">
+          <p class="eyebrow" data-v13-i18n="architect.eyebrow">Architecte de projet</p>
+          <h2 data-v13-i18n="architect.title">Vous n’avez pas besoin de parler technique pour bien définir votre projet.</h2>
+          <p data-v13-i18n="architect.text">Notre formulaire guidé transforme votre activité, vos objectifs et vos idées en une première architecture compréhensible — pages, fonctions, données, budget et accompagnement.</p>
+          <div class="architect-benefits"><span data-v13-i18n="architect.b1">✓ Questions adaptées</span><span data-v13-i18n="architect.b2">✓ Brouillon local</span><span data-v13-i18n="architect.b3">✓ Résumé prêt à envoyer</span></div>
+          <a class="button button-primary button-shine" href="project.html" data-v13-i18n="architect.cta">Construire mon brief</a>
+        </div>
+        <div class="architect-preview" aria-label="Aperçu de l'architecte de projet">
+          <div class="preview-top"><span>Project Architect</span><b>42%</b></div>
+          <div class="preview-progress"><span></span></div>
+          <p data-v13-i18n="architect.question">Que doit pouvoir accomplir votre client ?</p>
+          <div class="preview-options"><span data-v13-i18n="architect.o1">Réserver</span><span data-v13-i18n="architect.o2">Acheter</span><span data-v13-i18n="architect.o3">Demander un devis</span><span data-v13-i18n="architect.o4">Recevoir un diagnostic</span></div>
+          <div class="preview-next" data-v13-i18n="architect.next">Continuer →</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="offers" class="section premium-offers">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="offers.eyebrow">Des offres lisibles</p>
+          <h2 data-v13-i18n="offers.title">Un point de départ clair. Un périmètre sur mesure.</h2>
+          <p data-i18n="offers.intro">Les montants ci-dessous sont indicatifs. Chaque devis précise le périmètre, les délais et ce qui est inclus.</p>
+        </div>
+        <div class="premium-offer-grid">
+          <article class="premium-offer reveal"><span>WEB ESSENTIAL</span><h3 data-i18n="offers.launch.title">Landing page</h3><p class="premium-price"><small data-i18n="offers.from">à partir de</small><strong data-price="landing">690 €</strong></p><ul><li>Storyline & structure</li><li>Design responsive premium</li><li>Formulaire & mise en ligne</li></ul><a href="project.html?type=website" class="button button-secondary" data-v13-i18n="offers.start">Démarrer</a></article>
+          <article class="premium-offer premium-offer-featured reveal"><div class="popular-badge" data-i18n="offers.popular">Le plus demandé</div><span>BUSINESS PRESENCE</span><h3 data-i18n="offers.growth.title">Site professionnel</h3><p class="premium-price"><small data-i18n="offers.from">à partir de</small><strong data-price="website">1 490 €</strong></p><ul><li>Architecture jusqu’à 5 pages</li><li>SEO, services & références</li><li>Administration adaptée</li></ul><a href="project.html?type=website" class="button button-primary" data-v13-i18n="offers.start">Démarrer</a></article>
+          <article class="premium-offer reveal"><span>DIGITAL PRODUCT</span><h3 data-i18n="offers.product.title">Application sur mesure</h3><p class="premium-price"><small data-i18n="offers.study">après étude</small><strong data-price="app">Sur devis</strong></p><ul><li>Prototype fonctionnel</li><li>Utilisateurs, données & API</li><li>Plan de lancement et d’évolution</li></ul><a href="project.html?type=app" class="button button-secondary" data-v13-i18n="offers.describe">Décrire l’application</a></article>
+          <article class="premium-offer reveal"><span>CONTINUITY</span><h3 data-i18n="offers.care.title">Support web</h3><p class="premium-price"><small data-i18n="offers.from">à partir de</small><strong data-price="support">59 €/mois</strong></p><ul><li>Corrections & mises à jour</li><li>Surveillance et sauvegardes</li><li>Conseils d’évolution</li></ul><a href="project.html?type=support" class="button button-secondary" data-v13-i18n="offers.support">Demander du support</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section premium-contact">
+      <div class="shell contact-stage reveal">
+        <div class="contact-orb" aria-hidden="true"></div>
+        <div>
+          <p class="eyebrow" data-i18n="contact.eyebrow">Parlons concret</p>
+          <h2 data-v13-i18n="contact.title">Votre prochain projet peut commencer par une conversation simple.</h2>
+          <p data-v13-i18n="contact.text">Présentez votre activité et ce que vous souhaitez améliorer. Nous vous aiderons à identifier la solution la plus réaliste avant de parler technologie.</p>
+          <a id="contact-email-address" class="contact-mail" href="mailto:algbr@gmail.com">algbr@gmail.com</a>
+        </div>
+        <div class="contact-actions"><a class="button button-primary button-shine" href="project.html" data-v13-i18n="contact.project">Configurer mon projet</a><a id="contact-github" class="button button-secondary" href="https://github.com/Guy2B" target="_blank" rel="noopener">GitHub</a></div>
+      </div>
+    </section>
+
+    <section class="section faq-section premium-faq">
+      <div class="shell faq-grid">
+        <div class="section-heading reveal"><p class="eyebrow">FAQ</p><h2 data-i18n="faq.title">Les questions avant de commencer.</h2></div>
+        <div class="faq-list">
+          <details class="reveal"><summary data-i18n="faq.q1">Puis-je commencer avec un petit budget ?</summary><p data-i18n="faq.a1">Oui. Nous pouvons isoler le besoin prioritaire, lancer une première version utile puis ajouter les fonctions lorsque le projet le justifie.</p></details>
+          <details class="reveal"><summary data-i18n="faq.q2">Qui héberge le site ?</summary><p data-i18n="faq.a2">Le site peut être publié sur GitHub Pages, Firebase Hosting ou un hébergeur adapté à vos besoins. Le choix dépend des fonctions, du trafic et des données utilisées.</p></details>
+          <details class="reveal"><summary data-i18n="faq.q3">Puis-je modifier les contenus moi-même ?</summary><p data-i18n="faq.a3">Oui. Selon le projet, nous fournissons un fichier de configuration simple, une interface d’administration ou une formation rapide.</p></details>
+          <details class="reveal"><summary data-i18n="faq.q4">Le support continue-t-il après la livraison ?</summary><p data-i18n="faq.a4">Oui. Vous pouvez choisir une intervention ponctuelle ou un forfait de suivi avec mises à jour, corrections et conseils.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer premium-footer">
+    <div class="shell footer-topline"><p data-v13-i18n="footer.statement">Concevoir une belle interface est le début. Construire le bon système est notre métier.</p><a href="project.html" data-v13-i18n="footer.cta">Parler de votre projet →</a></div>
+    <div class="shell footer-grid">
+      <div><a class="brand footer-brand algbr-brand" href="#top"><img class="algbr-brand-logo" src="assets/algbr-wordmark.svg" alt="Al.G.B.r. Digital Studio" width="176" height="46"></a><p data-i18n="footer.tagline">Concevoir. Développer. Accompagner.</p></div>
+      <div><h3 data-i18n="footer.services">Services</h3><a href="#services" data-i18n="services.web.title">Sites web</a><a href="#services" data-i18n="services.app.title">Applications & outils</a><a href="#services" data-i18n="services.support.title">Web support</a></div>
+      <div><h3 data-i18n="footer.company">Al.G.B.r.</h3><a href="#work" data-i18n="nav.work">Références</a><a href="#process" data-i18n="nav.process">Méthode</a><a href="project.html" data-v13-i18n="nav.project">Démarrer un projet</a></div>
+      <div><h3 data-i18n="footer.legal">Informations</h3><a href="legal.html" data-i18n="footer.legalNotice">Mentions légales</a><a href="privacy.html" data-i18n="footer.privacy">Confidentialité</a><a id="footer-github" href="https://github.com/Guy2B" target="_blank" rel="noopener">GitHub</a></div>
+    </div>
+    <div class="shell footer-bottom"><p>© <span id="year"></span> Al.G.B.r. <span data-i18n="footer.rights">Tous droits réservés.</span></p><p data-v13-i18n="footer.note">Digital products, thoughtfully engineered.</p></div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js" defer></script>
+  <script src="v13.js" defer></script>
+</body>
+</html>
