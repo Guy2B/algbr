@@ -5,16 +5,17 @@ window.ALGBR_CONFIG = {
     city: "Europe"
   },
   contact: {
-    email: "",
+    email: "algbr@gmail.com",
     phone: "",
     whatsapp: "",
     calendly: "",
     github: "https://github.com/Guy2B",
-    formEndpoint: ""
+    formEndpoint: "",
+    projectSubmissionEndpoint: ""
   },
   projects: {
-    sigma: "https://guy2b.github.io/sum/",
-    luneBeauty: ""
+    sigma: "https://project-sum-b961a.web.app/app.html#dashboard",
+    luneBeauty: "https://www.lunebeauty.de/"
   },
   pricing: {
     landing: "690 €",
@@ -23,6 +24,6 @@ window.ALGBR_CONFIG = {
     app: "Sur devis"
   },
   seo: {
-    publicUrl: "https://votre-domaine.example"
+    publicUrl: "https://guy2b.github.io/algbr/"
   }
 };

@@ -163,7 +163,14 @@
   dialog?.addEventListener('click', e => { if (e.target === dialog) dialog.close(); });
 
   const contactEmail = document.getElementById('contact-email');
-  if (cfg.contact?.email) contactEmail.href = `mailto:${cfg.contact.email}`;
+  const contactEmailAddress = document.getElementById('contact-email-address');
+  if (cfg.contact?.email) {
+    if (contactEmail) contactEmail.href = `mailto:${cfg.contact.email}`;
+    if (contactEmailAddress) { contactEmailAddress.href = `mailto:${cfg.contact.email}`; contactEmailAddress.textContent = cfg.contact.email; }
+  }
+  document.querySelectorAll('[data-logo-fallback]').forEach((image) => {
+    image.addEventListener('error', () => { image.hidden = true; const fallback = image.nextElementSibling; if (fallback) fallback.hidden = false; }, { once: true });
+  });
   document.getElementById('year').textContent = new Date().getFullYear();
 
   const observer = new IntersectionObserver(entries => entries.forEach(entry => {
