@@ -1,31 +1,23 @@
-# Validation — Al.G.B.r. Studio V1.2
+# Validation V1.4
 
 ## Contrôles réussis
 
-- syntaxe JavaScript : `app.js`, `config.js`, `project.js`, `v12.js` ;
-- analyse HTML : `index.html`, `project.html`, `privacy.html`, `legal.html`, `404.html` ;
-- aucun identifiant HTML dupliqué ;
-- tous les fichiers locaux référencés existent ;
-- tous les identifiants utilisés par `project.js` existent dans `project.html` ;
-- sept étapes numérotées de 0 à 6 ;
-- accolades CSS équilibrées ;
-- références et e-mail présents dans `config.js` ;
-- sitemap incluant le configurateur ;
-- aucun mot de passe, secret API ou fichier `.env` inclus ;
-- archives ZIP testées après création.
+- 22 pages HTML statiques
+- 5 pages de services
+- 8 pages sectorielles
+- liens et ressources locales contrôlés
+- aucun identifiant HTML dupliqué
+- syntaxe JavaScript validée avec Node.js
+- sitemap et robots.txt générés
+- données structurées Organization, Service et FAQ ajoutées
+- aucune police externe, aucun tracker et aucun cookie publicitaire
+- responsive CSS avec points de rupture 1060, 780 et 480 px
+- CTA mobile fixe et cibles tactiles adaptées
 
-## Fonctionnalités contrôlées par inspection
+## Limite du contrôle visuel
 
-- sélection du type de projet ;
-- champs conditionnels site/application/écosystème ;
-- preset Lune Beauty ;
-- sauvegarde dans `localStorage` ;
-- génération du brief ;
-- recommandation d’architecture ;
-- export TXT et JSON ;
-- e-mail vers `algbr@gmail.com` ;
-- endpoint cloud facultatif.
+Le moteur Chromium de l’environnement de construction n’a pas produit de capture exploitable. La validation finale doit être effectuée dans Chrome, Edge, Safari/iPhone et Firefox après déploiement.
 
-## Limite de l’environnement de test
+## Blocage juridique avant publication commerciale
 
-Le navigateur Chromium disponible dans l’environnement de construction bloque les URL locales et les fichiers locaux par une politique administrateur. Le parcours interactif complet n’a donc pas pu être exécuté visuellement ici. La recette finale doit être réalisée sur GitHub Pages ou Firebase Hosting, sur ordinateur et téléphone.
+Les champs rouges de `impressum.html` et `datenschutz.html` doivent être remplacés par les informations réelles. Les textes doivent être revus lorsque le formulaire Firebase, Analytics, Calendly, cartes, vidéos ou tout autre service externe est activé.
