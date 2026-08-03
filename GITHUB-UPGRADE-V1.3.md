@@ -1,24 +1,14 @@
-# Déployer sur Firebase Hosting
+# Mise à jour GitHub — Al.G.B.r. V1.3
 
-Prérequis : Node.js et Firebase CLI.
+1. Télécharger et décompresser `AlGBr-Studio-V1.3-Premium-GitHub-Patch.zip`.
+2. Ouvrir le dépôt GitHub `algbr`.
+3. Choisir **Add file → Upload files**.
+4. Glisser tout le contenu du dossier extrait à la racine du dépôt.
+5. GitHub remplace automatiquement les fichiers dont le chemin existe déjà.
+6. Ne pas supprimer `.github/workflows`.
+7. Message conseillé : `Upgrade Al.G.B.r. to V1.3 premium story`.
+8. Valider dans `main`.
+9. Attendre le déploiement GitHub Pages vert.
+10. Recharger le site avec `Ctrl + F5`.
 
-```bash
-npm install -g firebase-tools
-firebase login
-firebase init hosting
-```
-
-Lors de l'initialisation :
-
-- choisissez votre projet Firebase ;
-- utilisez `.` comme dossier public ;
-- ne remplacez pas `index.html` ;
-- ne configurez pas ce site statique comme une SPA avec réécriture globale.
-
-Puis :
-
-```bash
-firebase deploy --only hosting
-```
-
-Le fichier `firebase.json` est déjà fourni. Copiez `.firebaserc.example` vers `.firebaserc` et remplacez l'identifiant du projet si nécessaire.
+Adresse prévue : `https://guy2b.github.io/algbr/`.
