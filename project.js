@@ -1,3 +1,4 @@
+/* © 2026 Al.G.B.r. Digital Studio. Proprietary source code. All rights reserved. */
 (()=>{
  const form=document.getElementById('wizard'); if(!form) return;
  const steps=[...document.querySelectorAll('.wizard-step')],progress=document.getElementById('progress'),next=document.getElementById('next'),prev=document.getElementById('prev');let idx=0;

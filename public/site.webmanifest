@@ -1,9 +1,0 @@
-{
-  "name": "Al.G.B.r. Digital Studio",
-  "short_name": "Al.G.B.r.",
-  "start_url": "./",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#071a35",
-  "icons": []
-}

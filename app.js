@@ -1,3 +1,4 @@
+/* © 2026 Al.G.B.r. Digital Studio. Proprietary source code. All rights reserved. */
 
 (()=>{
  const menu=document.querySelector('.menu'), nav=document.querySelector('.nav-links');
