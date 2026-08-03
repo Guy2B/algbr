@@ -1,0 +1,4 @@
+Contact: mailto:algbr@gmail.com
+Expires: 2027-08-03T09:21:38.449Z
+Preferred-Languages: de, fr, en
+Canonical: https://guy2b.github.io/algbr/.well-known/security.txt

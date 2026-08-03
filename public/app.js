@@ -1,0 +1,8 @@
+/* © 2026 Al.G.B.r. Digital Studio. Proprietary source code. All rights reserved. */
+
+(()=>{
+ const menu=document.querySelector('.menu'), nav=document.querySelector('.nav-links');
+ menu?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));});
+ nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+ document.querySelectorAll('[data-year]').forEach(e=>e.textContent=new Date().getFullYear());
+})();
