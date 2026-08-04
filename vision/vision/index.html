@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#091d36">
+  <title>ALGBr Vision Generator</title>
+  <meta name="description" content="Personalisierte ALGBr Konzeptstudien für bestehende Unternehmenswebsites.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="app-header">
+    <a class="brand" href="../">
+      <span class="brand-mark">A</span>
+      <span><strong>ALGBr Vision</strong><small>Generator</small></span>
+    </a>
+    <div class="header-actions">
+      <button class="button secondary" id="saveProject">Projekt speichern</button>
+      <button class="button primary" id="exportDemo">Demo exportieren</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="controls">
+      <section class="control-section">
+        <div class="section-head"><span>01</span><div><h2>Unternehmen</h2><p>Basisdaten des Prospekts</p></div></div>
+        <label>Unternehmensname<input id="company" value="G. Knorr Heizungsbau GmbH"></label>
+        <label>Website<input id="website" value="www.knorr-heizungsbau.de"></label>
+        <label>Standort<input id="location" value="Lampertheim"></label>
+        <label>Branche
+          <select id="industry">
+            <option>Heizung & Sanitär</option>
+            <option>Elektrotechnik</option>
+            <option>KFZ-Werkstatt</option>
+            <option>Immobilien</option>
+            <option>Rechtsberatung</option>
+            <option>Dienstleistungen</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="control-section">
+        <div class="section-head"><span>02</span><div><h2>Bestehende Website</h2><p>Screenshot lokal importieren</p></div></div>
+        <label class="upload">
+          <input type="file" id="screenshot" accept="image/*">
+          <strong>Screenshot auswählen</strong>
+          <small>Die Datei bleibt lokal im Browser.</small>
+        </label>
+        <label>Leitsatz<input id="headline" value="Wir bringen Wärme in Ihr Zuhause"></label>
+        <div class="color-row">
+          <label>Primär<input type="color" id="primary" value="#0b2d57"></label>
+          <label>Akzent<input type="color" id="accent" value="#d9272f"></label>
+        </div>
+      </section>
+
+      <section class="control-section">
+        <div class="section-head"><span>03</span><div><h2>Module</h2><p>Nur relevante Erweiterungen</p></div></div>
+        <div class="module-list">
+          <label><input type="checkbox" data-module="assistant" checked><span><strong>KI-Assistent</strong><small>Fragen & Qualifizierung</small></span></label>
+          <label><input type="checkbox" data-module="emergency" checked><span><strong>24/7 Notdienst</strong><small>Störungen priorisieren</small></span></label>
+          <label><input type="checkbox" data-module="booking" checked><span><strong>Online-Termine</strong><small>Direkt buchbar</small></span></label>
+          <label><input type="checkbox" data-module="quote" checked><span><strong>Angebotsassistent</strong><small>Projekte erfassen</small></span></label>
+          <label><input type="checkbox" data-module="whatsapp"><span><strong>WhatsApp</strong><small>Schneller Kontakt</small></span></label>
+          <label><input type="checkbox" data-module="dashboard" checked><span><strong>Dashboard</strong><small>Wirkung messen</small></span></label>
+        </div>
+      </section>
+
+      <section class="control-section">
+        <div class="section-head"><span>04</span><div><h2>Potenzial</h2><p>Illustrative Simulation</p></div></div>
+        <label>Besucher / Monat<div class="range"><input type="range" id="traffic" min="200" max="10000" value="1400" step="100"><output id="trafficOut"></output></div></label>
+        <label>Aktuelle Conversion<div class="range"><input type="range" id="conversion" min="1" max="10" value="3" step=".5"><output id="conversionOut"></output></div></label>
+        <label>Erwartete Steigerung<div class="range"><input type="range" id="uplift" min="10" max="80" value="35" step="5"><output id="upliftOut"></output></div></label>
+      </section>
+
+      <section class="control-section">
+        <div class="section-head"><span>05</span><div><h2>Prospektionsmail</h2><p>Automatisch personalisiert</p></div></div>
+        <textarea id="emailText" rows="16" readonly></textarea>
+        <button class="button full" id="copyEmail">E-Mail kopieren</button>
+      </section>
+    </aside>
+
+    <section class="preview">
+      <div class="preview-toolbar">
+        <div class="tabs">
+          <button class="active" data-view="vision">Vision</button>
+          <button data-view="today">Heute</button>
+          <button data-view="dashboard">Dashboard</button>
+          <button data-view="cover">Cover</button>
+        </div>
+        <span>Live Preview</span>
+      </div>
+
+      <div class="canvas">
+        <article class="page active" id="visionView">
+          <div class="client-top"><span id="pWebsite"></span><span id="pLocation"></span></div>
+          <div class="client-nav">
+            <div class="client-brand"><span>🔥</span><div><strong id="pCompany"></strong><small id="pIndustry"></small></div></div>
+            <nav><span>HOME</span><span>ÜBER UNS</span><span>LEISTUNGEN</span><span>KONTAKT</span></nav>
+          </div>
+
+          <section class="client-hero">
+            <div class="hero-image" id="heroImage"><div class="fallback"><div class="house"></div><div class="unit"></div></div></div>
+            <div class="hero-shade"></div>
+            <div class="hero-copy">
+              <small>MEISTERBETRIEB</small>
+              <h1 id="pHeadline"></h1>
+              <p>Professionelle Lösungen, persönliche Beratung und zuverlässiger Service.</p>
+              <button>MEHR ERFAHREN</button>
+              <div class="vision-line">So könnte Ihre Website bereits in <strong>4–6 Wochen</strong> aussehen.</div>
+            </div>
+
+            <aside class="dock" id="dock">
+              <div class="dock-title">ALGBr MODULE</div>
+              <button data-demo="assistant"><b>AI</b><span><strong>KI-Assistent</strong><small>Fragen & Qualifizierung</small></span></button>
+              <button data-demo="emergency"><b>24/7</b><span><strong>Notdienst</strong><small>Störungen priorisieren</small></span></button>
+              <button data-demo="booking"><b>CAL</b><span><strong>Online-Termine</strong><small>Direkt buchbar</small></span></button>
+              <button data-demo="quote"><b>FORM</b><span><strong>Angebotsassistent</strong><small>Projekte erfassen</small></span></button>
+              <button data-demo="whatsapp"><b>WA</b><span><strong>WhatsApp</strong><small>Schneller Kontakt</small></span></button>
+              <button data-demo="dashboard"><b>DASH</b><span><strong>Dashboard</strong><small>Wirkung messen</small></span></button>
+            </aside>
+          </section>
+
+          <section class="service-grid">
+            <article><span>🔥</span><strong>HEIZUNG</strong><small>Moderne Systeme</small></article>
+            <article><span>🚰</span><strong>SANITÄR</strong><small>Professionelle Lösungen</small></article>
+            <article><span>🛁</span><strong>BÄDER</strong><small>Individuelle Gestaltung</small></article>
+            <article><span>🔧</span><strong>SERVICE</strong><small>Zuverlässig & schnell</small></article>
+          </section>
+
+          <section class="benefit-grid">
+            <article><strong>24/7</strong><span>digitale Erreichbarkeit</span></article>
+            <article><strong id="extraLeads"></strong><span>zusätzliche Anfragen / Monat*</span></article>
+            <article><strong>-40%</strong><span>weniger Routinekommunikation*</span></article>
+            <article><strong>messbar</strong><span>durch das Dashboard</span></article>
+          </section>
+        </article>
+
+        <article class="page" id="todayView">
+          <div class="simple-head"><span>HEUTE</span><h2 id="todayCompany"></h2><p>Die bestehende Website bleibt die Grundlage.</p></div>
+          <div class="today-card">
+            <div class="today-image" id="todayImage"><div class="fallback"><div class="house"></div><div class="unit"></div></div></div>
+            <div><h3 id="todayHeadline"></h3><p>Der aktuelle Auftritt informiert und schafft Vertrauen.</p></div>
+          </div>
+          <div class="analysis-grid">
+            <article class="good"><small>WAS BEREITS ÜBERZEUGT</small><p>✓ Seriöser Unternehmensauftritt</p><p>✓ Klare Leistungsübersicht</p><p>✓ Lokale Vertrauenswirkung</p></article>
+            <article class="potential"><small>DIGITALES POTENZIAL</small><p>○ Keine Soforthilfe rund um die Uhr</p><p>○ Keine direkte Online-Terminbuchung</p><p>○ Keine strukturierte Vorqualifizierung</p><p>○ Keine zentrale Erfolgsmessung</p></article>
+          </div>
+          <blockquote>Wir schlagen keinen Relaunch vor. Wir schlagen intelligente Erweiterungen vor.</blockquote>
+        </article>
+
+        <article class="page dashboard-page" id="dashboardView">
+          <aside><strong>ALGBr</strong><span class="active">Übersicht</span><span>Anfragen</span><span>Termine</span><span>Leads</span><span>Berichte</span></aside>
+          <section>
+            <div class="dash-head"><div><small id="dashCompany"></small><h2>Performance Dashboard</h2></div><span>Live Demo</span></div>
+            <div class="kpis">
+              <article><small>Neue Anfragen</small><strong id="futureLeads"></strong><span>pro Monat</span></article>
+              <article><small>Zusätzliche Anfragen</small><strong id="gainLeads"></strong><span>durch bessere Conversion*</span></article>
+              <article><small>Qualifizierte Leads</small><strong id="qualifiedLeads"></strong><span>beispielhaft</span></article>
+              <article><small>Ø Antwortzeit</small><strong>14 Min.</strong><span>statt Stunden</span></article>
+            </div>
+            <div class="dash-grid">
+              <div class="chart-card">
+                <div class="card-head"><strong>Anfragenentwicklung</strong><span>30 Tage</span></div>
+                <svg viewBox="0 0 800 260" preserveAspectRatio="none"><defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d64d8" stop-opacity=".3"/><stop offset="1" stop-color="#1d64d8" stop-opacity="0"/></linearGradient></defs><path d="M0 220 C70 205 90 150 150 176 S240 110 300 126 S390 62 450 92 S550 42 610 68 S700 20 800 36 L800 260 L0 260Z" fill="url(#area)"/><path d="M0 220 C70 205 90 150 150 176 S240 110 300 126 S390 62 450 92 S550 42 610 68 S700 20 800 36" fill="none" stroke="#1d64d8" stroke-width="7" stroke-linecap="round"/></svg>
+              </div>
+              <div class="lead-card">
+                <div class="card-head"><strong>Neue Anfragen</strong><span>priorisiert</span></div>
+                <div class="lead"><b class="high">HOCH</b><span><strong>Keine Heizung</strong><small>Gastherme · Fehler F28</small></span></div>
+                <div class="lead"><b class="medium">MITTEL</b><span><strong>Wärmepumpe</strong><small>EFH · 148 m²</small></span></div>
+                <div class="lead"><b class="low">NORMAL</b><span><strong>Wartung</strong><small>Termin nächste Woche</small></span></div>
+              </div>
+            </div>
+          </section>
+        </article>
+
+        <article class="page cover" id="coverView">
+          <div class="cover-logo">ALGBr</div>
+          <div class="cover-center"><span>EXKLUSIVE DIGITALE KONZEPTSTUDIE</span><p>für</p><h2 id="coverCompany"></h2><hr><h1>So könnte Ihre Website<br>bereits in <strong>4–6 Wochen</strong> aussehen.</h1><hr class="short"><p>Ihre Website bleibt.<br><b>ALGBr erweitert sie.</b></p></div>
+          <div class="cover-footer"><span id="coverLocation"></span><span>ALGBr Vision</span></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" hidden>
+    <div class="modal-card"><button class="modal-close">×</button><div class="modal-content"></div></div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
