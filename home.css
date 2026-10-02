@@ -935,3 +935,6 @@ img {
 .brand-list span { opacity: 0.85; }
 .brand-list i { font-style: normal; font-size: 0.85rem; opacity: 0.7; white-space: nowrap; }
 @media (max-width: 640px) { .brand-list a { grid-template-columns: 1fr; gap: 4px; } }
+
+.nsxt { display: inline-flex; align-items: baseline; padding: 8px 13px 7px; border-radius: 12px; background: #111214; color: #f6f3ee; font-family: var(--sans); font-weight: 700; font-size: 0.9em; letter-spacing: 0.02em; line-height: 1; border: 1px solid rgb(255 255 255 / 18%); }
+.nsxt b { font-weight: 800; font-size: 1.45em; line-height: 0.8; margin: 0 0.04em; }
