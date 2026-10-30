@@ -991,11 +991,6 @@ img {
 @media (max-width: 900px) { .refs { grid-template-columns: 1fr; } }
 .ref .product-copy > .btn { align-self: flex-start; }
 .ref h3 .by { font-family: var(--sans); font-size: 0.42em; font-weight: 600; letter-spacing: 0.05em; opacity: 0.7; }
-.ref-sub { margin: 4px 0 22px; padding: 16px 18px; border-radius: 16px; background: rgb(255 255 255 / 5%); border: 1px solid rgb(255 255 255 / 12%); }
-.ref-sub-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 0 0 8px; }
-.ref-sub-head .nsxt { font-size: 1.05rem; }
-.ref-sub-tag { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em; color: var(--teal); }
-.ref-sub p:last-child { margin: 0; color: #c9d1e6; }
 
 /* Lune Beauty case: logo title, layered photos, results */
 .lune-stack { position: relative; padding: 0 0 46px 0; }
@@ -1010,3 +1005,34 @@ img {
 .ref-results dt { font-family: var(--serif); font-size: 1.7rem; line-height: 1.1; color: #f3d9a4; }
 .ref-results dd { margin: 4px 0 0; font-size: 0.82rem; line-height: 1.35; color: #c9d1e6; }
 @media (max-width: 560px) { .ref-results { grid-template-columns: 1fr; } .lune-photo { width: 40%; } }
+
+/* Own products: NEXT and Cortex, side by side, then how they work together */
+.ref-visual-cortex { padding: 22px; background: radial-gradient(circle at 70% 20%, rgb(19 145 141 / 35%), transparent 60%), rgb(255 255 255 / 3%); }
+.ref-visual-cortex .sigma-mock { box-shadow: 0 20px 50px rgb(0 0 0 / 35%); }
+.cortex-mock .mock-mark { background: #13918d; }
+.cx-line { display: grid; grid-template-columns: 44px 1fr; gap: 10px; align-items: stretch; }
+.cx-line time { font-size: 0.78rem; color: #8a877f; padding-top: 10px; font-variant-numeric: tabular-nums; }
+.cx-blk { display: grid; gap: 2px; padding: 10px 12px; border-radius: 10px; background: #fff; border: 1px solid #e7e5df; border-left: 4px solid #8a877f; }
+.cx-blk.deep { border-left-color: #13918d; background: #eef7f6; }
+.cx-blk b { font-size: 0.9rem; }
+.cx-blk small { color: #8a877f; font-size: 0.75rem; }
+.cx-habits { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; padding: 10px 12px; border-radius: 10px; background: #fff; border: 1px solid #e7e5df; font-size: 0.85rem; font-weight: 600; }
+.cx-habits i { width: 14px; height: 14px; border-radius: 4px; border: 1.5px solid #cfcabf; }
+.cx-habits i.on { background: #13918d; border-color: #13918d; }
+.cx-habits span + i { margin-left: 2px; }
+.cx-habits i + span { margin-left: 12px; }
+.cx-habits b { color: #13918d; }
+.cx-note { display: flex; gap: 8px; align-items: center; padding: 10px 12px; border-radius: 10px; background: #fff; border: 1px dashed #cfcabf; font-size: 0.85rem; font-style: italic; color: #5b5953; }
+.cx-mic { flex: none; width: 9px; height: 9px; border-radius: 50%; background: #c0392b; box-shadow: 0 0 0 4px rgb(192 57 43 / 15%); }
+.ref-bridge { grid-column: 1 / -1; display: grid; grid-template-columns: auto 1fr; gap: clamp(18px, 3vw, 36px); align-items: center; padding: clamp(20px, 3vw, 30px) clamp(22px, 3vw, 34px); border-radius: 24px; background: linear-gradient(90deg, rgb(114 88 233 / 18%), rgb(19 145 141 / 18%)); border: 1px solid rgb(255 255 255 / 14%); }
+.ref-bridge h3 { font-family: var(--serif); font-weight: 500; font-size: clamp(1.4rem, 2.2vw, 1.8rem); margin: 0 0 6px; }
+.ref-bridge p { margin: 0; color: #c9d1e6; }
+.ref-bridge-mark { display: flex; align-items: center; gap: 12px; margin: 0; font-size: 1.05rem; }
+.ref-bridge-link { font-size: 1.5rem; color: var(--teal); font-weight: 700; }
+.ref-wide { grid-column: 1 / -1; }
+@media (min-width: 901px) {
+  .ref-wide { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 4vw, 48px); align-items: center; }
+}
+@media (max-width: 640px) {
+  .ref-bridge { grid-template-columns: 1fr; }
+}
