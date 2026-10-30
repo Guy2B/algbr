@@ -990,6 +990,12 @@ img {
 .marken-foot a { font-weight: 700; color: var(--accent-ink); text-decoration: none; }
 @media (max-width: 900px) { .refs { grid-template-columns: 1fr; } }
 .ref .product-copy > .btn { align-self: flex-start; }
+.ref h3 .by { font-family: var(--sans); font-size: 0.42em; font-weight: 600; letter-spacing: 0.05em; opacity: 0.7; }
+.ref-sub { margin: 4px 0 22px; padding: 16px 18px; border-radius: 16px; background: rgb(255 255 255 / 5%); border: 1px solid rgb(255 255 255 / 12%); }
+.ref-sub-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 0 0 8px; }
+.ref-sub-head .nsxt { font-size: 1.05rem; }
+.ref-sub-tag { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em; color: var(--teal); }
+.ref-sub p:last-child { margin: 0; color: #c9d1e6; }
 
 /* Lune Beauty case: logo title, layered photos, results */
 .lune-stack { position: relative; padding: 0 0 46px 0; }
